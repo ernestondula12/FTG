@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Galeria</title>
+	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+	<link rel="stylesheet"href="../css/bootstrap.min.css">
+	<style type="text/css">
+		
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.min {
+			width: 200px;
+			padding: 10px;
+
+		}
+
+		ul{
+			width: 880px;
+			list-style: none;
+			display: flex;
+			margin: 100px auto;
+		}
+		.Ibox:target{
+			opacity: 1;
+			visibility: visible;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background: rgb(10, 10, 10, .7);
+			position: fixed;
+		}
+
+		.Ibox{
+			visibility: hidden;
+			opacity: 0;
+		}
+
+		.box_img{
+			width: 1000px;
+			margin: 150px auto;
+		}
+
+		.btn {
+			color: #fff;
+			font-family: 'Arial';
+			text-decoration: none;
+			position: absolute;
+			width: 50px;
+			height: 50px;
+			font-size: 40px;
+			text-align: center;
+		}
+
+		#prev {
+			left: 5%;
+			top: 45%;
+		}
+
+		#next {
+			right: 5%;
+			top: 45%;
+		}
+
+		#close {
+			top: 0;
+			right: 2%;
+		}
+
+		.box_img img {
+			opacity: 0;
+
+
+		}
+
+		.Ibox:target .box_img img {
+			opacity: 1;
+			transition: opacity .4s linear;
+		}
+
+
+
+	</style>
+</head>
+<body>
+ 	<!--Inicio da area menu-->
+	<div id="navegacao">
+		<div id="area">
+			<div id="logo">
+				<h1><span class="verde">Tec</span>Flying</h1>
+			</div>
+			<div id="menu"> 
+				<a href="index.html">Home</a>
+				<a href="galeria.html">Galeria</a>
+				<a href="entretenimento.html">Cadastro</a>
+				<a href="testemunho.html">Recomendações</a>
+			</div>
+		</div>
+	</div>
+	<!--Fim do menu-->
+
+	<ul>
+		<li><a href="#img1"><img src="imagens/galeria-02.jpg" class="min"></a></li>
+		<li><a href="#img2"><img src="imagens/galeria-04.jpg" class="min"></a></li>
+		<li><a href="#img3"><img src="imagens/galeria-05.jpg" class="min"></a></li>
+		<li><a href="#img4"><img src="imagens/galeria-06.jpg" class="min"></a></li>
+	</ul>
+
+  <div class="Ibox" id="img1">
+  	<div class="box_img">
+  		<a href="#img1" class="btn" id="prev">&#171;</a>
+  		<a href="" class="btn" id="close">X</a>
+  		<img src="imagens/galeria-02.jpg">
+  		<a href="#img2" class="btn" id="next">&#187;</a>	
+  	</div> 	
+  </div>
+
+  <div class="Ibox" id="img2">
+  	<div class="box_img">
+  		<a href="#img2" class="btn" id="prev">&#171;</a>
+  		<a href="" class="btn" id="close">X</a>
+  		<img src="imagens/galeria-04.jpg">
+  		<a href="#img3" class="btn" id="next">&#187;</a>	
+  	</div>	
+  </div>
+
+  <div class="Ibox" id="img3">
+  	<div class="box_img">
+  		<a href="#img3" class="btn" id="prev">&#171;</a>
+  		<a href="" class="btn" id="close">X</a>
+  		<img src="imagens/galeria-05.jpg">
+  		<a href="#img4" class="btn" id="next">&#187;</a>	
+  	</div>
+  </div>
+
+  <div class="Ibox" id="img4">
+  	<div class="box_img">
+  		<a href="#img4" class="btn" id="prev">&#171;</a>
+  		<a href="" class="btn" id="close">X</a>
+  		<img src="imagens/galeria-06.jpg">
+  		<a href="#img3" class="btn" id="next">&#187;</a>	
+  	</div>  	
+  </div>
+
+
+
+
+
+
+</body>
+</html>
